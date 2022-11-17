@@ -25,12 +25,40 @@ function randomUniqueInteger(howMany, minNum, maxNum) {
     
    const uniqueArr = [];
 
-    while (uniqueArr.length < howMany) {
+    for (let i = 0; i < howMany + 1; i++){
 
         let newNumber = randomInteger(minNum, maxNum);
 
         if (!uniqueArr.includes(newNumber)) {
             uniqueArr.push(newNumber);
         }
+
     }
+
+    return uniqueArr;
+
+
+
+
+    /* while (uniqueArr.length < howMany) {
+
+        let newNumber = randomInteger(minNum, maxNum);
+
+        if (!uniqueArr.includes(newNumber)) {
+            uniqueArr.push(newNumber);
+        }
+    } */
+}
+
+function pod(num) {
+        
+        let risultato;
+
+        if (num % 2 === 0) {
+            risultato = "pari";
+        } else {
+            risultato = "dispari";
+        }
+
+        return risultato;
 }

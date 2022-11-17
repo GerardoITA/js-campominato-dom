@@ -1,0 +1,69 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+body {
+    background-color: rgb(127, 255, 212);
+}
+/* ////// Header&Footer ////// */
+header {
+    height: 60px;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    line-height: 60px;
+}
+.logo {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    
+}
+#start {
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    background-color: rgb(4, 170, 109);
+    box-shadow: 0 6px rgb(153, 153, 153);
+    outline: none;
+}
+#start:hover {
+    background-color: rgb(62, 142, 65)
+}
+#start:active {
+    background-color: rgb(62, 142, 65);
+    box-shadow: 0 4px rgb(102, 102, 102);
+    transform: translateY(2px);
+}
+/* ////// Main ////// */
+main {
+    height: calc(90vh - 60px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#container {
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    justify-content: flex-start ;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+}
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 100px;
+}
+/* ////// Interactive ////// */
+.clicked {
+    background-color: rgb(153, 203, 255);
+}

@@ -5,13 +5,18 @@ function createBox(n, where) {
         document.getElementById(where).innerHTML += `
             <div class="box">${i}</div>
         `;
+        //creai div e lo metti una una variabile
+        //variabile (elemento)aggiungi la classe box
+        //metit numero corrente nel div
+        //aggiungio event listener
+
+        //
     }
 }
 
 function clearBox(where) {
 
     document.getElementById(where).innerHTML = ``;
-    console.clear;
 
 }
 
@@ -40,7 +45,7 @@ function randomUniqueInteger(howMany, minNum, maxNum) {
 
 
 
-    /* while (uniqueArr.length < howMany) {
+      /* while (uniqueArr.length < howMany) {
 
         let newNumber = randomInteger(minNum, maxNum);
 
@@ -50,15 +55,15 @@ function randomUniqueInteger(howMany, minNum, maxNum) {
     } */
 }
 
-function pod(num) {
-        
-        let risultato;
+function boxBomb(num) {
 
-        if (num % 2 === 0) {
-            risultato = "pari";
-        } else {
-            risultato = "dispari";
-        }
+    let risultato;
 
-        return risultato;
+    if (Bombs.includes(num)) {
+        risultato = "boom";
+    } else {
+        risultato = "safe";
+    }
+
+    return risultato;
 }

@@ -1,5 +1,8 @@
 let inizio = document.getElementById("start")
+const Bombs = randomUniqueInteger(16, 1, 100);
 
+
+console.log(Bombs);
 inizio.addEventListener("click", 
 
     function(){
@@ -10,12 +13,16 @@ inizio.addEventListener("click",
         for (const box of scatole) {
             box.addEventListener('click', function onClick() {
 
-                for (i = 1; i < scatole.length; i++) {
-                    this.classList.toggle("clicked");
-                    
-                }
-                console.log(i)
-            });
+                let boxContent = box.innerHTML
+                this.classList.toggle("clicked");
+                console.log(boxContent);
+
+                let isBoxABomb = boxBomb(boxContent);
+                console.log(isBoxABomb);
+                
+             
+            }
+            );
         } 
     }   
 
@@ -30,14 +37,11 @@ for (const box of scatole) {
         for(i = 1; i < scatole.length; i++){
             this.classList.toggle("clicked");
         }   
-        console.log(i)
+        console.log(i) 
     });
 } 
  */
 
-const myArray = randomUniqueInteger(16, 1, 100);
-const ArrayTest = ["ciao", "ciao", "ciao"];
 
-console.log(myArray);
-console.log(ArrayTest)
+
 

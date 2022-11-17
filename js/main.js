@@ -21,5 +21,5 @@ for (const box of scatole) {
     });
 } 
 
-
+const myArray = randomUniqueInteger(16, 1, 100);
 

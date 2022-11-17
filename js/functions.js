@@ -14,9 +14,23 @@ function clearBox(where) {
     console.clear;
 
 }
-/* function addClassOnClick(){
-   
-    this.classList.toggle("clicked");
-   
+
+function randomInteger(max, min){
+     
+    return ( Math.floor(Math.random() * ((max + 1) - min) + min));
+
+}
+
+function randomUniqueInteger(howMany, minNum, maxNum) {
     
-} */
+   const uniqueArr = [];
+
+    while (uniqueArr.length < howMany) {
+
+        let newNumber = randomInteger(minNum, maxNum);
+
+        if (!uniqueArr.includes(newNumber)) {
+            uniqueArr.push(newNumber);
+        }
+    }
+}
